@@ -4,8 +4,7 @@ const fs = require('fs');
 var readline = require('readline').createInterface({
     input: fs.createReadStream('sample.csv'),
     output: process.stdout,
-    crlfDelay: Infinity
-
+    terminal: false
   }),
 
   counter = 0,
